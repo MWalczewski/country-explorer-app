@@ -1,0 +1,19 @@
+{
+    "home": {
+        "description": "Znajdź informacje o krajach na całym świecie.",
+        "title": "Odkrywaj Kraje"
+    },
+    "navbar": {
+        "home": "Strona Główna",
+        "login": "Logowanie",
+        "register": "Rejestracja"
+    },
+    "languageSelect": {
+        "english": "Angielski",
+        "polish": "Polski",
+        "en": "en",
+        "pl": "pl",
+        "flagEn": "Angielska flaga",
+        "flagPl": "Polska flaga"
+    }
+}

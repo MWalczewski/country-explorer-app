@@ -1,0 +1,19 @@
+{
+    "home": {
+        "description": "Find information about countries around the world.",
+        "title": "Explore Countries"
+    },
+    "navbar": {
+        "home": "Home",
+        "login": "Sign In",
+        "register": "Sign Up"
+    },
+    "languageSelect": {
+        "english": "English",
+        "polish": "Polish",
+        "en": "en",
+        "pl": "pl",
+        "flagEn": "English flag",
+        "flagPl": "Polish flag"
+    }
+}
