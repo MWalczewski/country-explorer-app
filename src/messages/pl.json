@@ -3,17 +3,25 @@
         "description": "Znajdź informacje o krajach na całym świecie.",
         "title": "Odkrywaj Kraje"
     },
+    "languageSelect": {
+        "en": "en",
+        "english": "Angielski",
+        "flagEn": "Angielska flaga",
+        "flagPl": "Polska flaga",
+        "pl": "pl",
+        "polish": "Polski"
+    },
+    "login": {
+        "pageInProgress": "Strona w budowie. Do zobaczenia wkrótce!",
+        "title": "Odkrywaj Kraje"
+    },
     "navbar": {
         "home": "Strona Główna",
         "login": "Logowanie",
         "register": "Rejestracja"
     },
-    "languageSelect": {
-        "english": "Angielski",
-        "polish": "Polski",
-        "en": "en",
-        "pl": "pl",
-        "flagEn": "Angielska flaga",
-        "flagPl": "Polska flaga"
+    "register": {
+        "pageInProgress": "Strona w budowie. Do zobaczenia wkrótce!",
+        "title": "Odkrywaj Kraje"
     }
 }
