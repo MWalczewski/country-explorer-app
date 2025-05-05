@@ -4,7 +4,8 @@ import { Providers } from "./providers";
 import { loadMessages, routing } from "@/utils/intlUtils";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/common/navbar";
-import {Roboto} from "next/font/google"
+import { Roboto } from "next/font/google"
+import Footer from "@/components/common/footer";
 
 type Props = {
   children: React.ReactNode;
@@ -37,6 +38,7 @@ const LocaleLayout: React.FC<Props> = async ({ children, params }) => {
         <Providers locale={locale} messages={messages}>
           <Navbar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

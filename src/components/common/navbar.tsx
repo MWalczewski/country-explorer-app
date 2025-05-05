@@ -32,7 +32,7 @@ const Navbar = () => {
       >
         {({ open }) => (
           <>
-            <div className="container  bg-gray-200 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-gray-600 hover:dark:text-gray-200 flex justify-between pl-2 pr-3">
+            <div className="container max-w-7xl bg-gray-200 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-gray-600 hover:dark:text-gray-200 flex justify-between pl-2 pr-3">
               <div className="flex items-center w-full">
                 <Link
                   href="/"
