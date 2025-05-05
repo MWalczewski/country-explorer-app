@@ -11,7 +11,7 @@ const Hero = () => {
     return (
         <section className="w-full px-4 py-4 bg-white dark:bg-gray-900">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
-                {/* Left side: text */}
+
                 <div className="md:w-1/2 text-center md:text-left">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white">
                         {t("title")}
@@ -21,7 +21,6 @@ const Hero = () => {
                     </p>
                 </div>
 
-                {/* Right side: image */}
                 <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
                     <Image
                         src="/images/globe-icon.png"
@@ -31,6 +30,7 @@ const Hero = () => {
                         className="w-full max-w-sm"
                     />
                 </div>
+                
             </div>
         </section>
     )
