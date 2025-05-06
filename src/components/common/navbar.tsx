@@ -28,11 +28,11 @@ const Navbar = () => {
     <>
       <Disclosure
         as="nav"
-        className="sticky bg-gray-200 dark:bg-gray-800 top-0 shadow-md flex flex-col justify-start items-center py-7"
+        className="sticky bg-gray-50 dark:bg-gray-800 top-0 shadow-md flex flex-col justify-start items-center py-7"
       >
         {({ open }) => (
           <>
-            <div className="container max-w-7xl bg-gray-200 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-gray-600 hover:dark:text-gray-200 flex justify-between pl-2 pr-3">
+            <div className="container max-w-7xl bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-gray-600 hover:dark:text-gray-200 flex justify-between pl-2 pr-3">
               <div className="flex items-center w-full">
                 <Link
                   href="/"
