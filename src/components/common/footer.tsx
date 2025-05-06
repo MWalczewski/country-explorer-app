@@ -7,7 +7,7 @@ import { ArrowUpCircleIcon } from "@heroicons/react/24/outline";
 const Footer = () => {
 
     return (
-        <div className="w-full bg-gray-200 dark:bg-gray-800">
+        <div className="w-full bg-gray-50 dark:bg-gray-800 border-t border-t-gray-900/5">
             <div className="container max-w-7xl mx-auto flex flex-col justify-center items-center gap-2 py-4 relative">
                 <div className="flex gap-2">
                     {socialLinks.map((link) =>

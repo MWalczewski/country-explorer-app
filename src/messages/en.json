@@ -1,5 +1,12 @@
 {
     "home": {
+        "cardsSection": {
+            "continent": "Continent",
+            "failedToLoadCountries": "Failed to load countries.",
+            "loadingCountries": "Loading countries...",
+            "region": "Region",
+            "subregion": "Subregion"
+        },
         "description": "Discover detailed information about every country on Earth.",
         "title": "Explore the World"
     },
