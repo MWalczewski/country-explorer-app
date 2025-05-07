@@ -7,6 +7,16 @@
             "region": "Region",
             "subregion": "Subregion"
         },
+        "cardsSortFeature": {
+            "areaAsc": "Area Ascending",
+            "areaDesc": "Area Descending",
+            "cca3Asc": "CCA3 Code A-Z",
+            "cca3Desc": "CCA3 Code Z-A",
+            "nameAsc": "Name A-Z",
+            "nameDesc": "Name Z-A",
+            "populationAsc": "Population Ascending",
+            "populationDesc": "Population Descending"
+        },
         "description": "Discover detailed information about every country on Earth.",
         "title": "Explore the World"
     },
