@@ -25,10 +25,10 @@ export const countrySchema = z.object({
   maps: z.object({
     googleMaps: z.string().url().optional(),
     openStreetMaps: z
-      .preprocess((val) =>
-        typeof val === 'string' && !val.startsWith('http')
-          ? `https://${val}`
-          : val,
+      .preprocess((value) =>
+        typeof value === 'string' && !value.startsWith('http')
+          ? `https://${value}`
+          : value,
         z.string().url()
       )
       .optional()
