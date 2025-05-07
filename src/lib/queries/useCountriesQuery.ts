@@ -1,8 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { endpoints } from '@/constants/endpoints';
-import { countriesArraySchema } from '@/schemas/countrySchema';
-import { Country } from '@/schemas/countrySchema';
-
+import { countriesArraySchema, Country } from '@/schemas/countrySchema';
+// import { countrySchema } from '@/schemas/countrySchema';
 
 export const useCountriesQuery = () => {
     return useQuery<Country[]>({
@@ -12,6 +11,16 @@ export const useCountriesQuery = () => {
             if (!res.ok) throw new Error('Failed to fetch countries');
 
             const data = await res.json();
+
+            // wyszukiwanie błędów w danych z API
+            // data.forEach((item: Country, index: number) => {
+            //     const res = countrySchema.safeParse(item);
+            //     if (!res.success) {
+            //         console.error(`Validation failed at index ${index} (cca3: ${item.cca3})`);
+            //         console.error(res.error.format());
+            //     }
+            // });
+
             const result = countriesArraySchema.safeParse(data);
 
             if (!result.success) {
