@@ -18,8 +18,8 @@ export const countrySchema = z.object({
     svg: z.string().url().optional(),
   }).optional(),
   capital: z.array(z.string()).optional(),
-  area: z.number().optional(),
-  population: z.number().optional(),
+  area: z.number(),
+  population: z.number(),
   timezones: z.array(z.string()).optional(),
   languages: z.record(z.string()).optional(),
   maps: z.object({

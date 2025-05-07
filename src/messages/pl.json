@@ -7,6 +7,16 @@
             "region": "Region",
             "subregion": "Subregion"
         },
+        "cardsSortFeature": {
+            "areaAsc": "Powierzchnia rosnąco",
+            "areaDesc": "Powierzchnia malejąco",
+            "cca3Asc": "Kod CCA3 A-Z",
+            "cca3Desc": "Kod CCA3 Z-A",
+            "nameAsc": "Nazwa A-Z",
+            "nameDesc": "Nazwa Z-A",
+            "populationAsc": "Populacja rosnąco",
+            "populationDesc": "Populacja malejąco"
+        },
         "description": "Odkryj szczegółowe informacje o każdym kraju na Ziemi.",
         "title": "Odkrywaj Świat"
     },
