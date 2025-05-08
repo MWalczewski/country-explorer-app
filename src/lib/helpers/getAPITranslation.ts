@@ -1,13 +1,12 @@
 import type { SupportedLocale } from '@/constants/locales';
-
-type TranslationCategory = 'regions' | 'subregions' | 'continents';
+import { TranslationCategory } from '@/types/APITranslationCategory';
 
 type TranslationMap = Record<
     SupportedLocale,
     Record<TranslationCategory, Record<string, string>>
 >;
 
-const translationMap: TranslationMap = {
+export const translationMap: TranslationMap = {
     en: {
         regions: {
             Africa: 'Africa',

@@ -11,9 +11,9 @@ import {
   Bars3Icon,
 } from "@heroicons/react/20/solid";
 import { useTranslations } from "next-intl";
-import LanguageSelect from "./language-select";
+import LanguageSelect from "./languageSelect";
 import Link from "next/link";
-import ThemeSwitch from "./theme-switch";
+import ThemeSwitch from "./themeSwitch";
 
 const Navbar = () => {
   const t = useTranslations("navbar");
