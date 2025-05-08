@@ -17,6 +17,9 @@
             "populationAsc": "Populacja rosnąco",
             "populationDesc": "Populacja malejąco"
         },
+        "cardsSearchFeature" :{
+            "searchCountry": "Wyszukaj kraj"
+        },
         "description": "Odkryj szczegółowe informacje o każdym kraju na Ziemi.",
         "title": "Odkrywaj Świat"
     },

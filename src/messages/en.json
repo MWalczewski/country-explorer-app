@@ -17,6 +17,9 @@
             "populationAsc": "Population Ascending",
             "populationDesc": "Population Descending"
         },
+        "cardsSearchFeature" :{
+            "searchCountry": "Search country"
+        },
         "description": "Discover detailed information about every country on Earth.",
         "title": "Explore the World"
     },

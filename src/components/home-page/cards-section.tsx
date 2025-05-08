@@ -6,33 +6,46 @@ import { getAPITranslation } from "@/lib/helpers/getAPITranslation";
 import type { SupportedLocale } from '@/constants/locales';
 import Image from "next/image";
 import type { Country } from '@/schemas/countrySchema';
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
+import { Menu, MenuButton, MenuItem, MenuItems, Input } from '@headlessui/react';
 import { useState } from 'react';
 import { sortOptions, SortOptionId } from '@/constants/cardsSortOptions';
 import { sortCountries } from '@/utils/sortCountries';
-
+import searchCountry from "@/utils/searchCountry";
 
 const CardsSection = () => {
     const { data, isLoading, isError } = useCountriesQuery();
     const [sortBy, setSortBy] = useState<SortOptionId>('population-desc');
+    const [searchTerm, setSearchTerm] = useState('');
     const t = useTranslations('home');
     const locale = useLocale();
 
     if (isLoading) return <p>{t('cardsSection.loadingCountries')}</p>;
     if (isError) return <p className="text-red-500">{t('cardsSection.failedToLoadCountries')}</p>;
 
-    const sortedCountries = sortCountries(data ?? [], sortBy, locale as SupportedLocale);
+    const filtered = (data ?? []).filter((country) =>
+        searchCountry(country, searchTerm, locale as SupportedLocale)
+      );
+
+    const sortedCountries = sortCountries(filtered, sortBy, locale as SupportedLocale);
     const selectedOption = sortOptions.find((opt) => opt.id === sortBy);
 
     return (
         <section className="w-full">
 
-            <div className="max-w-5xl mx-auto px-7 py-2 flex justify-end">
+            <div className="max-w-5xl mx-auto px-7 py-2 flex justify-between">
+                <Input
+                    type="search"
+                    name="searchCountry"
+                    placeholder={t('cardsSearchFeature.searchCountry')}
+                    className="w-full max-w-3xs px-4 py-2 border rounded dark:bg-gray-700"
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                />
                 <Menu as="div" className="relative inline-block text-left">
                     <MenuButton className="px-4 py-2 border rounded bg-white dark:bg-gray-700">
                         {t(selectedOption?.labelKey ?? '')}
                     </MenuButton>
-                    <MenuItems  anchor="bottom end" className="absolute mt-2 w-56 bg-white dark:bg-gray-800 shadow-lg rounded z-10">
+                    <MenuItems anchor="bottom end" className="absolute mt-2 w-56 bg-white dark:bg-gray-800 shadow-lg rounded z-10">
                         {sortOptions.map((option) => (
                             <MenuItem key={option.id}>
                                 {({ active }) => (
