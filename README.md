@@ -80,7 +80,7 @@ npm run dev
 
 ## ✍️ Author
 
-\[Maciej Walczewski]. Project built for educational and demo purposes.
+**Maciej Walczewski**. Project built for educational and demo purposes.
 
 ---
 
