@@ -1,13 +1,12 @@
 import type { SupportedLocale } from '@/constants/locales';
-
-type TranslationCategory = 'regions' | 'subregions' | 'continents';
+import { TranslationCategory } from '@/types/APITranslationCategory';
 
 type TranslationMap = Record<
     SupportedLocale,
     Record<TranslationCategory, Record<string, string>>
 >;
 
-const translationMap: TranslationMap = {
+export const translationMap: TranslationMap = {
     en: {
         regions: {
             Africa: 'Africa',
@@ -22,6 +21,7 @@ const translationMap: TranslationMap = {
             'Western Europe': 'Western Europe',
             'Southern Europe': 'Southern Europe',
             'Eastern Europe': 'Eastern Europe',
+            'Central Europe': 'Central Europe',
             'Central America': 'Central America',
             'Northern America': 'Northern America',
             'South America': 'South America',
@@ -58,6 +58,7 @@ const translationMap: TranslationMap = {
             'Western Europe': 'Europa Zachodnia',
             'Southern Europe': 'Europa Południowa',
             'Eastern Europe': 'Europa Wschodnia',
+            'Central Europe': 'Europa Środkowa',
             'Central America': 'Ameryka Środkowa',
             'Northern America': 'Ameryka Północna',
             'South America': 'Ameryka Południowa',
@@ -86,7 +87,6 @@ export const getAPITranslation = (
     category: TranslationCategory,
     value: string,
     locale: SupportedLocale
-  ): string => {
+): string => {
     return translationMap[locale]?.[category]?.[value] ?? value;
-  };
-  
+};

@@ -1,5 +1,18 @@
 {
     "home": {
+        "cardsFilterFeature": {
+            "area": "Powierzchnia",
+            "continent": "Kontynent",
+            "from": "Od",
+            "population": "Populacja",
+            "region": "Region",
+            "subregion": "Subregion",
+            "to": "Do",
+            "clearFilters": "Wyczyść filtry"
+        },
+        "cardsSearchFeature": {
+            "searchCountry": "Wyszukaj kraj"
+        },
         "cardsSection": {
             "continent": "Kontynent",
             "failedToLoadCountries": "Błąd pobierania danych.",
@@ -16,9 +29,6 @@
             "nameDesc": "Nazwa Z-A",
             "populationAsc": "Populacja rosnąco",
             "populationDesc": "Populacja malejąco"
-        },
-        "cardsSearchFeature" :{
-            "searchCountry": "Wyszukaj kraj"
         },
         "description": "Odkryj szczegółowe informacje o każdym kraju na Ziemi.",
         "title": "Odkrywaj Świat"

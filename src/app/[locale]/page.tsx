@@ -1,5 +1,5 @@
-import CardsSection from "@/components/home-page/cards-section";
-import Hero from "@/components/home-page/hero-section";
+import CardsSection from "@/components/home-page/cardsSection";
+import Hero from "@/components/home-page/heroSection";
 
 
 export default function HomePage() {
