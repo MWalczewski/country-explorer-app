@@ -1,41 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 Country Explorer
 
-## Getting Started
+**Country Explorer** is a frontend application that allows users to browse information about countries around the world, using the public [REST Countries](https://restcountries.com/) API. The app supports filtering, sorting, searching, and personalization of appearance and language.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+* Display country cards with flag, name and continent
+* Filter by continent, region, subregion
+* Sort by name, population, area, country code
+* Country search functionality
+* Light / dark mode (Tailwind + next-themes)
+* Multi-language support (i18n via next-intl)
+* Mobile-first responsive layout
+
+---
+
+## 🚀 Technologies
+
+* **Next.js 15** (App Router)
+* **TypeScript**
+* **Tailwind CSS** + light/dark mode
+* **@tanstack/react-query** – data fetching & caching
+* **Zod** – API response validation
+* **Headless UI** – UI components
+* **next-intl** – internationalization
+
+---
+
+## 💡 Prerequisites
+
+* Node.js (v18+ recommended)
+* npm
+
+---
+
+## 🔧 How to run locally
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/MWalczewski/country-explorer-app.git
+cd country-explorer-app
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+# or npm i
+```
+
+3. **Create .env.local file**
+
+This file stores the base API URL (e.g. `NEXT_PUBLIC_API_URL=https://restcountries.com/v3.1`) and optionally the environment type.
+
+```bash
+touch .env.local
+```
+
+4. **Start the application**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. **Open in browser**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🌐 Available languages
 
-To learn more about Next.js, take a look at the following resources:
+* Polish (`/pl`)
+* English (`/en`)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✍️ Author
 
-## Deploy on Vercel
+**Maciej Walczewski**. Project built for educational and demo purposes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ✨ TO DO:
 
-using:
-i18n: https://next-intl.dev/
-UI components: https://headlessui.com/
-icons: https://heroicons.com/
+* Filtering by population and area range
+* Country detail view (population, languages, currencies, timezones, borders)
+* Favorites and "to visit" / "visited" lists (localStorage)
+* Registration and login (auth)
+* Backend (e.g., persistent favorites/visited data)
