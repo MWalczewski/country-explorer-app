@@ -7,7 +7,7 @@ import type { SupportedLocale } from '@/constants/locales';
 import Image from "next/image";
 import type { Country } from '@/schemas/countrySchema';
 import { Menu, MenuButton, MenuItem, MenuItems, Input } from '@headlessui/react';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { sortOptions, SortOptionId } from '@/constants/cardsSortOptions';
 import { sortCountries } from '@/utils/sortCountries';
 import searchCountry from "@/utils/searchCountry";
@@ -26,10 +26,6 @@ const CardsSection = () => {
     const [filters, setFilters] = useState<Filters>({});
     const t = useTranslations('home');
     const locale = useLocale();
-
-    useEffect(() => {
-        console.log('Filters changed:', filters);
-    }, [filters]);
 
     if (isLoading) return <p>{t('cardsSection.loadingCountries')}</p>;
     if (isError) return <p className="text-red-500">{t('cardsSection.failedToLoadCountries')}</p>;

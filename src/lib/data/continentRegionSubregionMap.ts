@@ -50,6 +50,7 @@ export const continentRegionSubregionMap = {
                     'Western Europe': { en: 'Western Europe', pl: 'Europa Zachodnia' },
                     'Southern Europe': { en: 'Southern Europe', pl: 'Europa Południowa' },
                     'Eastern Europe': { en: 'Eastern Europe', pl: 'Europa Wschodnia' },
+                    'Central Europe': { en: 'Central Europe', pl: 'Europa Środkowa' }
                 },
             },
         },
